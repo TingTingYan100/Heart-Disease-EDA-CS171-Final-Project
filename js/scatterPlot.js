@@ -276,7 +276,7 @@ class scatterPlot {
                     return { d, distance };
                 });
                 distances.sort((a, b) => a.distance - b.distance);
-                const closestCircles = distances.slice(0, 10).map(obj => obj.d);
+                const closestCircles = distances.slice(0, 5).map(obj => obj.d);
                 circles.each(function (d) {
                     const circle = d3.select(this);
                     const circleX = vis.xScale(d.x) + d.cxOffset;
@@ -297,8 +297,8 @@ class scatterPlot {
                             circle
                                 .transition()
                                 .duration(2)
-                                .attr("cx", circleX + Math.cos(angle) * 20)
-                                .attr("cy", circleY + Math.sin(angle) * 20)
+                                .attr("cx", circleX + Math.cos(angle) * 10)
+                                .attr("cy", circleY + Math.sin(angle) * 10)
                                 .attr("opacity", 0.3)
                                 .attr("r", 5)
                                 .attr("stroke-width", 1);
