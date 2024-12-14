@@ -69,7 +69,7 @@ The project uses the **Heart Disease Dataset** from the UC Irvine Machine Learni
 ---
 
 ## **Attributions**
-- **Dataset:** [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/datasets)
+- **Dataset:** [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/45/heart+disease)
 - **D3.js:** [D3.js Library](https://d3js.org/)
 
 
